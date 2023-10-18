@@ -31,7 +31,7 @@
                 <div class="price">
                   <i>¥</i>
                   <em>{{ skuInfo.price }}</em>
-                  <span>降价通知</span>
+                  <span>降价通知test</span>
                 </div>
                 <div class="remark">
                   <i>累计评价</i>
@@ -44,9 +44,7 @@
                 </div>
                 <div class="fixWidth">
                   <i class="red-bg">加价购</i>
-                  <em class="t-gray"
-                    >满999.00另加20.00元，或满1999.00另加30.00元，或满2999.00另加40.00元，即可在购物车换购热销商品</em
-                  >
+                  <em class="t-gray">满999.00另加20.00元，或满1999.00另加30.00元，或满2999.00另加40.00元，即可在购物车换购热销商品</em>
                 </div>
               </div>
             </div>
@@ -67,13 +65,9 @@
               <div class="choosed"></div>
               <dl v-for="(spuSaleAttr, index) in spuSaleAttrList" :key="spuSaleAttr.id">
                 <dt class="title">{{ spuSaleAttr.saleAttrName }}</dt>
-                <dd
-                  changepirce="0"
-                  :class="{ active: spuSaleAttrValue.isChecked == 1 }"
-                  v-for="(spuSaleAttrValue, index) in spuSaleAttr.spuSaleAttrValueList"
-                  :key="spuSaleAttrValue.id"
-                  @click="changeActive(spuSaleAttrValue, spuSaleAttr.spuSaleAttrValueList)"
-                >
+                <dd changepirce="0" :class="{ active: spuSaleAttrValue.isChecked == 1 }"
+                  v-for="(spuSaleAttrValue, index) in spuSaleAttr.spuSaleAttrValueList" :key="spuSaleAttrValue.id"
+                  @click="changeActive(spuSaleAttrValue, spuSaleAttr.spuSaleAttrValueList)">
                   {{ spuSaleAttrValue.saleAttrValueName }}
                 </dd>
               </dl>
@@ -422,7 +416,7 @@ export default {
     .conPoin {
       padding: 9px 15px 9px 0;
 
-      & > span + span:before {
+      &>span+span:before {
         content: '/\00a0';
         padding: 0 5px;
         color: #ccc;
@@ -687,7 +681,7 @@ export default {
             }
 
             .goodsList {
-              & > li {
+              &>li {
                 margin: 5px 0 15px;
                 border-bottom: 1px solid #ededed;
                 padding-bottom: 5px;
@@ -852,7 +846,7 @@ export default {
           li {
             float: left;
 
-            & + li > a {
+            &+li>a {
               border-left: 1px solid #ddd;
             }
 
