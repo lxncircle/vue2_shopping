@@ -1,11 +1,7 @@
 <template>
   <div class="swiper-container" ref="cur">
     <div class="swiper-wrapper">
-      <div
-        class="swiper-slide"
-        v-for="(carousel, index) in list"
-        :key="carousel.id"
-      >
+      <div class="swiper-slide" v-for="(carousel, index) in list" :key="carousel.id">
         <img :src="carousel.imgUrl" />
       </div>
     </div>
@@ -53,5 +49,4 @@ export default {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

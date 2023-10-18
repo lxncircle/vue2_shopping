@@ -14,7 +14,7 @@
         </div>
         <div class="right-gocart">
           <router-link class="sui-btn btn-xlarge" :to="`/detail/${skuInfo.id}`">查看商品详情</router-link>
-          <router-link to="/shopcart">去购物车结算</router-link>
+          <router-link to="/shopcart">去购物车结算test</router-link>
         </div>
       </div>
     </div>
@@ -68,6 +68,7 @@ export default {
           border: 1px solid #dfdfdf;
           width: 60px;
           float: left;
+
           img {
             width: 60px;
             height: 60px;
