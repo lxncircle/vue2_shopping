@@ -9,7 +9,7 @@
               <a href="##" style="border-right: 0;">扫描登录</a>
             </li>
             <li>
-              <a href="##" class="current">账户登录</a>
+              <a href="##" class="current">账户登录test1</a>
             </li>
           </ul>
 
